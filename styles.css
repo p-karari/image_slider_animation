@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'tahoma' , sans-serif;
+}
+
+body {
+    background-color: azure;
+    font-family: 'futura' ,sans-serif;
+}
+
+@keyframes slide_animation {
+   0% {margin: 0;}
+   25% {margin: 0;}
+   50% {margin-left: -1400px;}
+   75% {margin-left: -2800px;}
+   100% {margin-left: 0;}
+   
+}
+
+.slide_animation_container {
+    animation: slide_animation 9s ease infinite ;
+    min-height: 800px;
+    margin: 0;
+}
+
+.slide_animation_content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.images_container {
+    align-self: flex-start;
+    object-fit: contain;
+}
+
+.images {
+    width: 1400px;
+    height: 700px;
+}
